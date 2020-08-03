@@ -1,0 +1,125 @@
+:root {
+    --primary: #7ab6bb;
+    --primary-dark: #5D737E;
+
+    --white: #fcfcfc;
+    --greyLight-1: #D3D0CB;
+    --golden: #E2C044;
+    --black: #1E2019;
+    --black-bg: #100e17;
+    --bleu-noir: #17141d;
+
+}
+main {
+    margin-top: 80px;
+}
+
+p,
+h3 {
+    margin-left: 10px;
+    margin-bottom: 10px !important;
+}
+
+.zone-categorie-kantdev {
+    display: flex;
+    /* align-items: ; */
+    background-color: var(--bleu-noir);
+    color: var(--golden);
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 16px #00000080;
+    margin: 50px 0 50px;
+    transition: 0.4s ease-out;
+
+
+}
+
+.zone-categorie-kantdev:hover {
+    transform: scale(1.05);
+    background-color: var(--golden);
+    color: var(--bleu-noir);
+    transition: 0.4s ease-out;
+}
+
+.img-categorie-kantdev {
+    height: 40vw;
+    width: 40vw;
+    /* background-color: tomato; */
+}
+
+.img-categorie-kantdev img {
+    width: 100%;
+}
+
+.image-black-kantdev {
+    display: none;
+}
+
+.zone-categorie-kantdev .img-black-categorie-kantdev,
+.zone-categorie-kantdev:hover .img-golden-categorie-kantdev {
+    display: none;
+}
+
+.zone-categorie-kantdev:hover .img-black-categorie-kantdev {
+    display: block;
+
+}
+
+.zone-categorie-kantdev .text-categorie-kantdev .titre-categorie-kantdev h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.zone-categorie-kantdev .text-categorie-kantdev .resume-categorie-kantdev p {
+    font-size: .8rem;
+    font-weight: 200;
+}
+
+.zone-categorie-kantdev:hover .see-more-article-kantdev a {
+    color: var(--bleu-noir);
+    font-weight: 400;
+}
+
+@media screen and (min-width:768px) {
+
+    main {
+        margin-top: 120px;
+    }
+    
+
+    .zone-categorie-kantdev {
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img-categorie-kantdev {
+        height: 120px;
+        width: 120px;
+    }
+
+    .text-categorie-kantdev {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    footer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+@media screen and (min-width:1200px) {
+    #section-categorie-kantdev{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .zone-categorie-kantdev {
+        padding: 20px;
+        width: 500px;
+        height: 200px;
+        align-items: center;
+    }
+}
